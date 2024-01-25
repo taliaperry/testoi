@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Opportunities Incubator [TEST]</title>
+    
+ <style>
+   @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Space+Grotesk:wght@300..700&display=swap');
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--background: #8E98A6;
+--grid: #8CBEB2;
+--text: #F2EBBF;
+--textfade: #5C4B51;
+--textbright: #F3B562;
+}
+
+html {background-color: var(--background);
+font-size: 16px;
+font-family: 'Space Grotesk', sans-serif;
+font-weight:400;
+color: #333333}
+
+header {padding:1em; padding-bottom: 2em;
+   font-family: 'Krona One', sans-serif;
+font-weight:700;}
+footer {padding:1em; font-size:0.75em}
+
+a:link {
+color: var(--textfade);
+text-decoration: none;}
+a:visited {
+color: var(--textfade);
+text-decoration: none;}
+a:hover {
+color: var(--textbright);
+text-decoration: underline;}
+
+.featured{
+color: var(--text);
+font-weight:500; font-size:1.125em}
+   }
+   
+.container {display: grid;
+  background:  var(--grid);
+  width: 90%;
+  margin: auto;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 2em auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "description"
+    "gap"
+    "events"
+    "form";
+}
+   
+.gap {  grid-area: gap; background:  var(--background); width:100%} 
+.description, .form, .events {padding: 1em}
+.description { grid-area: description; }
+.form { grid-area: form; }
+.events { grid-area: events; }
+   
+   
+@media only screen and (min-width: 481px) {
+
+  .container {display: grid;
+  background:  var(--grid);
+  width: 90%;
+  margin: auto;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto 2em auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "description description"
+    "gap gap"
+    "form events";
+}
+  
+  }
+}
+
+
+</style>
+
+  </head>
+  <body>
+    <header>
+      <h1>OPPORTUNITIES INCUBATOR</h1>
+      <h3>(Mostly) Working Test Site</h3>
+</header>
+
+<div class="container">
+  <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  
+  <div class="gap"> </div>
+  
+  <div class="form">Use the <a href="https://docs.google.com/forms/d/e/1FAIpQLSf71o1uqTh2RoVA_1KVl1InoQ5OOIQoDoxsY8Sf5CHSigpEsA/viewform?usp=sf_link" target="_blank">form</a> below to tell us about additional events.<br>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf71o1uqTh2RoVA_1KVl1InoQ5OOIQoDoxsY8Sf5CHSigpEsA/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+  
+  <div class="events">
+    
+    <p class="featured">Featured Event: <span class="ref" 
+          data-google-sheet-column='1' 
+          data-google-sheet-row='2' 
+          data-google-sheet-url='https://docs.google.com/spreadsheets/d/e/2PACX-1vTWYhj0mAYg-y1q-RF780mN1R9Nr-S884ef5HaRWDV1X-GN1jnWtb92BfqTG_EbITMocywTrJzd4q_H/pub?gid=1398482402&single=true&output=csv'></span></p>
+    <p><span class="ref" 
+          data-google-sheet-column='1' 
+          data-google-sheet-row='3' 
+          data-google-sheet-url='https://docs.google.com/spreadsheets/d/e/2PACX-1vTWYhj0mAYg-y1q-RF780mN1R9Nr-S884ef5HaRWDV1X-GN1jnWtb92BfqTG_EbITMocywTrJzd4q_H/pub?gid=1398482402&single=true&output=csv'></span> at <span class="ref" 
+          data-google-sheet-column='1' 
+          data-google-sheet-row='5' 
+          data-google-sheet-url='https://docs.google.com/spreadsheets/d/e/2PACX-1vTWYhj0mAYg-y1q-RF780mN1R9Nr-S884ef5HaRWDV1X-GN1jnWtb92BfqTG_EbITMocywTrJzd4q_H/pub?gid=1398482402&single=true&output=csv'></span>
+<br><span class="ref" 
+          data-google-sheet-column='1' 
+          data-google-sheet-row='4' 
+          data-google-sheet-url='https://docs.google.com/spreadsheets/d/e/2PACX-1vTWYhj0mAYg-y1q-RF780mN1R9Nr-S884ef5HaRWDV1X-GN1jnWtb92BfqTG_EbITMocywTrJzd4q_H/pub?gid=1398482402&single=true&output=csv'></span>
+<br>Currently, <span class="ref" 
+          data-google-sheet-column='1' 
+          data-google-sheet-row='6' 
+          data-google-sheet-url='https://docs.google.com/spreadsheets/d/e/2PACX-1vTWYhj0mAYg-y1q-RF780mN1R9Nr-S884ef5HaRWDV1X-GN1jnWtb92BfqTG_EbITMocywTrJzd4q_H/pub?gid=1398482402&single=true&output=csv'></span> people from the CMU Libraries are planning to attend. <a href="#">Let us know</a> if you'll be joining them!
+</p>
+    
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=America%2FNew_York&showTz=0&showCalendars=0&showPrint=0&showTitle=0&mode=AGENDA&src=Y182OWQxMWI2ZDllOTQwZjEzNjRlZDllMzBhNzg3MGZmNmMzY2E4NWYwODc4YjIxNWVkYzE5MTM1YTc5MDZjZGQ0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23a3a3a3" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    
+  </div>
+</div>
+
+            
+
+
+
+
+<footer>Thrown together by Talia Perry in 2024, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY</a>.</footer>
+
+
+
+    <div id='google-sheet-replacer'>
+      <script type='text/javascript'>
+        // Borrowed from https://www.bennadel.com/blog/1504-ask-ben-parsing-csv-strings-with-javascript-exec-regular-expression-command.htm and minified for copy-ability reasons
+        // Mod version borrowed by me from Matt Kahl via https://codepen.io/mattkahl/pen/mqGWZg
+        var CSVToArray = function CSVToArray(e,r){r=r||",";for(var n=new RegExp("(\\"+r+'|\\r?\\n|\\r|^)(?:"([^"]*(?:""[^"]*)*)"|([^"\\'+r+"\\r\\n]*))","gi"),g=[[]],l=null;l=n.exec(e);){var a=l[1];if(a.length&&a!=r&&g.push([]),l[2])p=l[2].replace(new RegExp('""',"g"),'"');else var p=l[3];g[g.length-1].push(p)}return g}      
+        var fetchGoogleSheetAsArray = function fetchGoogleSheetAsArray(googleSheetURL, callback) {
+          var googleSheetRequest = new XMLHttpRequest();
+          googleSheetRequest.addEventListener('load', function() {
+            var rawCSVText = googleSheetRequest.responseText;          
+            callback(CSVToArray(rawCSVText));
+          });
+          googleSheetRequest.addEventListener('error', function() {
+            console.error('Google Sheet Replacer had trouble fetching the Google Sheet at: ' + googleSheetURL);
+          })
+          googleSheetRequest.open('GET', googleSheetURL);
+          googleSheetRequest.send();
+        }
+        var processAllGoogleSheetReplacerElements = function processAllGoogleSheetReplacerElements() {
+          googleSheetElements = document.querySelectorAll('[data-google-sheet-url]');
+          googleSheetElements.forEach(function (googleSheetElement){
+            var googleSheetURL = googleSheetElement.getAttribute('data-google-sheet-url');
+            var googleSheetColumn = parseInt(googleSheetElement.getAttribute('data-google-sheet-column'), 10);
+            var googleSheetRow = parseInt(googleSheetElement.getAttribute('data-google-sheet-row'), 10);
+            fetchGoogleSheetAsArray(googleSheetURL, function(googleSheetArray) {
+              googleSheetElement.innerHTML = googleSheetArray[googleSheetRow - 1][googleSheetColumn - 1];
+            });
+          });
+        }
+        processAllGoogleSheetReplacerElements();
+      </script>
+    </div>
+    
+  </body>
+</html>
