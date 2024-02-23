@@ -38,7 +38,7 @@ header {padding:1em; padding-bottom: 2em;
 font-weight:700;}
 footer {padding:1em; font-size:0.75em}
 
-nav{position: relative; width: 90%;background: var(--textfade);	color: var(--grid);margin: 1.5em auto;}
+nav{position: relative; width: 90%;background: var(--textfade);	color: margin: 1.5em auto;}
 nav ul{
 	display: flex; 
 	flex-wrap: wrap; 
@@ -49,12 +49,12 @@ nav ul{
 nav ul, nav li{
 	flex: 1;	}
 nav li:last-child{border-bottom: none;}
-nav li a:link, a:visited{
+nav a.menuitem:link, a.menuitem:visited{
 	text-decoration: none;
 	color: var(--grid);
 	display: block;
 	font-size: 1.25em;}
-nav li a:hover{
+nav a.menuitem:hover{
 	background: var(--grid);
 	color: var(--textfade);}
 nav li{
@@ -65,15 +65,15 @@ nav li{
 nav input,
 nav label{
 	display: none;
-	width: 36px; 
-	height: 36px; 
+	width: 2em; 
+	height: 2em; 
 	background: var(--textfade); 
 	color: var(--grid); 
 	text-align: center; 
-	line-height: 36px;
-	font-size: 1.6rem;
+	line-height: 2em;
+	font-size: 1.5em;
 	border-radius: 4px;} 
-nav label{position: fixed; top: .5em; right: 10%; transition: .4s;}
+nav label{position: static; top: 2em; right: 5%; transition: .4s;}
 nav label:hover{cursor:pointer;}
 nav label:before{
 	font-family: FontAwesome;
@@ -168,12 +168,12 @@ font-weight:500; font-size:1.125em}
 <main>
 	       <nav>
          <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu"> 
-         <ul class="main">
-               <li><a href="">Home</a></li>
-               <li><a href="">Grants</a></li>
-               <li><a href="">Conferences</a></li>
-               <li><a href="">Journals</a></li>
-               <li><a href="">Explore</a></li>
+         <ul class="menulist">
+               <li><a class="menuitem" href="">Home</a></li>
+               <li><a class="menuitem" href="">Grants</a></li>
+               <li><a class="menuitem" href="">Conferences</a></li>
+               <li><a class="menuitem" href="">Journals</a></li>
+               <li><a class="menuitem" href="">Explore</a></li>
          </ul> 
          <label for="css-toggle-menu" id="css-toggle-menu"></label> 
    </nav>
