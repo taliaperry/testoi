@@ -38,7 +38,7 @@ header {padding:1em; padding-bottom: 2em;
 font-weight:700;}
 footer {padding:1em; font-size:0.75em}
 
-nav{position: relative; width: 90%;background: var(--textfade);margin: 1.5em auto;}
+nav{position: relative; width: 90%;background: var(--textfade);	color: var(--grid);margin: 1.5em auto;}
 nav ul{
 	display: flex; 
 	flex-wrap: wrap; 
@@ -57,10 +57,6 @@ nav a:link, a:visited{
 nav a:hover{
 	background: var(--grid);
 	color: var(--textfade);}
-	 a:link {
-color: var(--textfade);
-text-decoration: none;}
-	 
 nav li{
 	position: relative;
 	line-height: 50px;
@@ -77,11 +73,11 @@ nav label{
 	line-height: 36px;
 	font-size: 1.6rem;
 	border-radius: 4px;} 
-nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
+nav label{position: sticky; top: .5em; right: 10%; transition: .4s;}
 nav label:hover{cursor:pointer;}
 nav label:before{
 	font-family: FontAwesome;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	content: "\f0c9";
 	text-align: center;}
 
