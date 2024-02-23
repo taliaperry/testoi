@@ -9,6 +9,7 @@
     
  <style>
    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Space+Grotesk:wght@300..700&display=swap');
+   @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 *,
 ::before,
@@ -36,6 +37,66 @@ header {padding:1em; padding-bottom: 2em;
    font-family: 'Krona One', sans-serif;
 font-weight:700;}
 footer {padding:1em; font-size:0.75em}
+
+nav{position: relative; background: var(--textfade);margin-top:1.5em; margin-bottom:1.5em;}
+nav ul{
+	display: flex; 
+	flex-wrap: wrap; 
+	max-width: 1080px; 
+	margin: 0 auto;
+	list-style: none;
+	padding: 0;		}
+nav ul, nav li{
+	flex: 1;	}
+nav li:last-child{border-bottom: none;}
+nav a{
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	font-size: 1.25em;}
+nav a:hover{
+	background: var(--grid);
+	color: var(--textfade);}
+nav li{
+	position: relative;
+	line-height: 50px;
+	color: var(--grid);
+	text-align: center;}  
+nav input,
+nav label{
+	display: none;
+	width: 36px; 
+	height: 36px; 
+	background: var(--textfade); 
+	color: var(--grid); 
+	text-align: center; 
+	line-height: 36px;
+	font-size: 1.6rem;
+	border-radius: 4px;} 
+nav label{position: absolute; top: 8px; right: 8px; transition: .4s;}
+nav label:hover{cursor:pointer;}
+nav label:before{
+	font-family: FontAwesome;
+	font-size: 24px;
+	content: "\f0c9";
+	text-align: center;}
+
+@media only screen and (max-width: 1080px){
+	nav ul{
+		display: none; 
+		box-shadow: 0 0 5px rgba(0,0,0, .7);}
+	nav li{
+		flex: none; 
+		width: 100%;} 
+	nav input[type="checkbox"]:checked + ul{
+		display: block;
+		width: 100%;
+		background: var(--textfade); }
+	nav label{display: block;}  
+	nav input[type="checkbox"]:checked + ul li:nth-child(1){
+		background: #333333; 
+		color: var(--text);}  
+}
 
 a:link {
 color: var(--textfade);
@@ -103,6 +164,17 @@ font-weight:500; font-size:1.125em}
     <header>
       <h1>OPPORTUNITIES INCUBATOR</h1>
       <h3>(Mostly) Working Test Site</h3>
+       <nav>
+         <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu"> 
+         <ul class="main">
+               <li><a href="">Home</a></li>
+               <li><a href="">Grants</a></li>
+               <li><a href="">Conferences</a></li>
+               <li><a href="">Journals</a></li>
+               <li><a href="">Explore</a></li>
+         </ul> 
+         <label for="css-toggle-menu" id="css-toggle-menu"></label> 
+   </nav>
 </header>
 
 <div class="container">
