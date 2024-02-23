@@ -49,12 +49,12 @@ nav ul{
 nav ul, nav li{
 	flex: 1;	}
 nav li:last-child{border-bottom: none;}
-nav a:link, a:visited{
+nav li a:link, a:visited{
 	text-decoration: none;
 	color: var(--grid);
 	display: block;
 	font-size: 1.25em;}
-nav a:hover{
+nav li a:hover{
 	background: var(--grid);
 	color: var(--textfade);}
 nav li{
@@ -73,7 +73,7 @@ nav label{
 	line-height: 36px;
 	font-size: 1.6rem;
 	border-radius: 4px;} 
-nav label{position: sticky; top: .5em; right: 10%; transition: .4s;}
+nav label{position: fixed; top: .5em; right: 10%; transition: .4s;}
 nav label:hover{cursor:pointer;}
 nav label:before{
 	font-family: FontAwesome;
