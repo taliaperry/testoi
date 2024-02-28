@@ -127,7 +127,7 @@ font-weight:500; font-size:1.125em}
   margin: auto;
   grid-template-columns: 30% 70%;
   grid-template-rows: auto 2em auto;
-  gap: 2em;
+  gap: 0;
   grid-auto-flow: row;
   grid-template-areas:
     "description description"
