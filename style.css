@@ -113,7 +113,7 @@ font-weight:500; font-size:1.125em}
 }
    
 .gap {  grid-area: gap; background:  var(--background); width:100%; margin: 0;} 
-.description, .form, .events {padding: 1em}
+.description, .lefty, .righty {padding: 1em}
 .description { grid-area: description; }
 .lefty { grid-area: lefty; }
 .righty { grid-area: righty; }
