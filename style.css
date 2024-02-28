@@ -94,9 +94,10 @@ nav label:before{
 
 .ref {}
 .ref-italic {font-style: italic;}
+.ref-bright {color: var(--textbright);}
 .ref-little {
 font-size: .75em;
-font-weight:300;;}
+font-weight:300;}
 .ref-big {
 font-size: 1.25em;
 font-weight:500;
