@@ -94,6 +94,13 @@ nav label:before{
 
 .ref {}
 .ref-italic {font-style: italic;}
+.ref-little {
+font-size: .75em;
+font-weight:300;;}
+.ref-big {
+font-size: 1.25em;
+font-weight:500;
+color: var(----textbright);}
 
 .spacer {padding-top:1.5em}
 
