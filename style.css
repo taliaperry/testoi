@@ -119,7 +119,7 @@ font-weight:500; font-size:1.125em}
 .righty { grid-area: righty; }
    
    
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 651px) {
 
   .container {display: grid;
   background:  var(--grid);
@@ -134,7 +134,8 @@ font-weight:500; font-size:1.125em}
     "gap gap"
     "lefty righty";
 }
-	@media only screen and (max-width: 800px){
+}
+	@media only screen and (max-width: 1080px){
 	nav ul{
 		display: none; 
 		/* box-shadow: 0 0 5px rgba(0,0,0, .7);*/
