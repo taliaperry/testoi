@@ -28,6 +28,16 @@ header {padding:1em; padding-bottom: 2em;
 font-weight:700;}
 footer {padding:1em; font-size:0.75em}
 
+a:link {
+color: var(--textfade);
+text-decoration: none;}
+a:visited {
+color: var(--textfade);
+text-decoration: none;}
+a:hover {
+color: var(--textbright);
+text-decoration: underline;}
+
 nav{position: relative;
     width: 90%;
     background: var(--textfade); 
@@ -78,29 +88,7 @@ nav label:before{
 	content: "\f0c9";
 	text-align: center;}
 
-@media only screen and (max-width: 1080px){
-	nav ul{
-		display: none; 
-		/* box-shadow: 0 0 5px rgba(0,0,0, .7);} */
-	nav li{
-		flex: none; 
-		width: 100%;} 
-	nav input[type="checkbox"]:checked + ul{
-		display: block;
-		width: 100%;
-		background: var(--textfade); }
-	nav label{display: block;} 
-}
 
-a:link {
-color: var(--textfade);
-text-decoration: none;}
-a:visited {
-color: var(--textfade);
-text-decoration: none;}
-a:hover {
-color: var(--textbright);
-text-decoration: underline;}
 
 .spacer {padding-top:1.5em}
 
@@ -146,6 +134,17 @@ font-weight:500; font-size:1.125em}
     "gap gap"
     "form events";
 }
-  
-  }
+	@media only screen and (max-width: 1080px){
+	nav ul{
+		display: none; 
+		/* box-shadow: 0 0 5px rgba(0,0,0, .7);*/
+	} 
+	nav li{
+		flex: none; 
+		width: 100%;} 
+	nav input[type="checkbox"]:checked + ul{
+		display: block;
+		width: 100%;
+		background: var(--textfade); }
+	nav label{display: block;} 
 }
