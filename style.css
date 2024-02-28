@@ -28,6 +28,10 @@ header {padding:1em; padding-bottom: 2em;
 font-weight:700;}
 footer {padding:1em; font-size:0.75em}
 
+p {
+	margin-bottom:.5em;
+}
+
 a:link {
 color: var(--textfade);
 text-decoration: none;}
@@ -88,7 +92,8 @@ nav label:before{
 	content: "\f0c9";
 	text-align: center;}
 
-
+.ref {}
+.ref-italic {font-style: italic;}
 
 .spacer {padding-top:1.5em}
 
