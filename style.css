@@ -79,7 +79,7 @@ nav label{
 	text-align: center; 
 	line-height: 2em;
 	font-size: 1.5em;
-	border-radius: 4px;} 
+	border-radius: 2px;} 
 nav label{position: absolute; top: -2em; right: 0; transition: .4s;}
 nav label:hover{cursor:pointer;}
 nav label:before{
@@ -132,13 +132,11 @@ font-weight:500; font-size:1.125em}
   grid-template-areas:
     "description description"
     "gap gap"
-    "lefty righty";
-}
+    "lefty righty";}
 }
 	@media only screen and (max-width: 1080px){
 	nav ul{
 		display: none; 
-		/* box-shadow: 0 0 5px rgba(0,0,0, .7);*/
 	} 
 	nav li{
 		flex: none; 
