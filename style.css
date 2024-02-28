@@ -155,7 +155,7 @@ font-weight:500; font-size:1.25em}}
     "description description"
     "gap gap"
     "lefty righty";}
-  .container #altdivide{  grid-template-columns: 30% 70%;
+   #altdivide.container {  grid-template-columns: 30% 70%;
 }
 }
 
