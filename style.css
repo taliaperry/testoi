@@ -95,6 +95,12 @@ display: block;
 background: var(--text);
 padding: .25em;
 margin-top: .5em;}
+.darkcard {
+display: block;
+background: var(--textfade);
+color: var(--text);
+padding: .25em;
+margin-top: .5em;}
 
 .ref {}
 .ref-italic {font-style: italic;}
