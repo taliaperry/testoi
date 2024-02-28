@@ -95,7 +95,7 @@ display: block;
 background: var(--text);
 padding: .25em;
 margin-top: .5em;}
-#darkcard {
+.darkcard {
 display: block;
 background: var(--textfade);
 color: var(--text);
