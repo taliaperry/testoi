@@ -91,8 +91,10 @@ nav label:before{
 	text-align: center;}
 
 .upcoming li {
-	display: block;
-background: var(--text)}
+display: block;
+background: var(--text);
+padding: .25em;
+margin-top: .5em;}
 
 .ref {}
 .ref-italic {font-style: italic;}
@@ -139,7 +141,7 @@ font-weight:500; font-size:1.25em}}
   background:  var(--grid);
   width: 90%;
   margin: auto;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto 2em auto;
   gap: 0;
   grid-auto-flow: row;
@@ -147,7 +149,10 @@ font-weight:500; font-size:1.25em}}
     "description description"
     "gap gap"
     "lefty righty";}
+  .container #altdivide{  grid-template-columns: 30% 70%;
 }
+}
+
 	@media only screen and (max-width: 1080px){
 	nav ul{
 		display: none; 
