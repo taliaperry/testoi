@@ -28,9 +28,7 @@ header {padding:1em; padding-bottom: 2em;
 font-weight:700;}
 footer {padding:1em; font-size:0.75em}
 
-p {
-	margin-bottom:.5em;
-}
+p {margin-bottom:.5em;}
 
 a:link {
 color: var(--textfade);
@@ -92,9 +90,13 @@ nav label:before{
 	content: "\f0c9";
 	text-align: center;}
 
+.upcoming li {
+	display: block;
+background: var(--text)}
+
 .ref {}
 .ref-italic {font-style: italic;}
-.ref-bright {color: var(--textbright);}
+.ref-bright {color: var(--textfade);}
 .ref-little {
 font-size: .75em;
 font-weight:300;}
@@ -105,10 +107,9 @@ color: var(----textbright);}
 
 .spacer {padding-top:1.5em}
 
-.featured{
+.featured {
 color: var(--text);
-font-weight:500; font-size:1.125em}
-   }
+font-weight:500; font-size:1.25em}}
    
 .container {display: grid;
   background:  var(--grid);
