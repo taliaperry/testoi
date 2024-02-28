@@ -40,6 +40,7 @@ footer {padding:1em; font-size:0.75em}
 
 nav{position: relative;
     width: 90%;
+    color: var(--textbright);
     background: var(--textfade); 
     margin: 1.5em 5%;}
 nav ul{
@@ -52,6 +53,10 @@ nav ul{
 nav ul, nav li{
 	flex: 1;	}
 nav li:last-child{border-bottom: none;}
+nav .menuitem {
+	color: var(--textbright);
+	display: block;
+	font-size: 1.25em;}
 nav a.menuitem:link, a.menuitem:visited{
 	text-decoration: none;
 	color: var(--grid);
@@ -95,10 +100,7 @@ nav label:before{
 		display: block;
 		width: 100%;
 		background: var(--textfade); }
-	nav label{display: block;}  
-	nav input[type="checkbox"]:checked + ul li:nth-child(1){
-		background: #333333; 
-		color: var(--text);}  
+	nav label{display: block;} 
 }
 
 a:link {
@@ -172,7 +174,7 @@ font-weight:500; font-size:1.125em}
 	       <nav>
          <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu"> 
          <ul class="main">
-               <li><a class="menuitem" href="">Home</a></li>
+               <li><span class="menuitem">Home</span></li>
                <li><a class="menuitem" href="">Grants</a></li>
                <li><a class="menuitem" href="">Conferences</a></li>
                <li><a class="menuitem" href="">Journals</a></li>
