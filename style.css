@@ -152,22 +152,26 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   width: 300px;
-  padding: .5em 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-table.explorelist {
-  border-collapse: collapse;
-  border: 2px solid var(--textbright);
-}
+.formblock select {padding-top: .25em; padding-bottom: .5em;}
 
+.formblock {
+display: block;
+background: var(--text);
+padding: .25em;
+margin-top: .5em;}
+
+table.explorelist {
+  background:  var(--grid);}
 th,
 td {
   padding: .5em;
-  border-collapse: collapse;
-  border: 1px solid var(--text);
-}
+  border-bottom: 1px solid var(--text);}
+tr:hover {background-color: var(--background);}
    
    
 @media only screen and (min-width: 651px) {
