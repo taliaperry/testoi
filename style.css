@@ -139,6 +139,34 @@ font-weight:500; font-size:1.25em}}
 .description { grid-area: description; }
 .lefty { grid-area: lefty; }
 .righty { grid-area: righty; }
+
+.full{
+  width:90%;
+  margin: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 30%;
+  max-width: 200px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table.explorelist {
+  border-collapse: collapse;
+  border: 2px solid var(--textbright);
+}
+
+th,
+td {
+  padding: .5em;
+}
    
    
 @media only screen and (min-width: 651px) {
