@@ -169,17 +169,19 @@ input[type=submit]:hover {
   background-color: var(--grid);
 }
 
-.formblock label {padding-top: .5em; padding-bottom: .5em;}
+.formblock label {margin-top: .5em; margin-bottom: .5em;}
 
 .formblock {
 text-align: right;
 display: block;
 background: var(--text);
-padding: .25em;}
+padding: .5em;}
 
 table.explorelist {
   background:  var(--grid);
-  border: none;}
+  border: 0px;
+font-size: .75em;
+font-weight:300;}
 th,
 td {
   padding: .5em;
