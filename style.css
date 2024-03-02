@@ -157,16 +157,29 @@ textarea {
   box-sizing: border-box;
 }
 
-.formblock select {padding-top: .25em; padding-bottom: .5em;}
+input[type=submit] {
+  background-color: var(--textbright);
+  border: none;
+  padding: .5em;
+  text-decoration: none;
+  margin: .5em 0;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: var(--grid);
+}
+
+.formblock label {padding-top: .5em; padding-bottom: .5em;}
 
 .formblock {
+text-align: right;
 display: block;
 background: var(--text);
-padding: .25em;
-margin-top: .5em;}
+padding: .25em;}
 
 table.explorelist {
-  background:  var(--grid);}
+  background:  var(--grid);
+  border: none;}
 th,
 td {
   padding: .5em;
