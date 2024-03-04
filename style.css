@@ -178,6 +178,8 @@ background: var(--text);
 padding: .5em;}
 
 table.explorelist {
+table-layout: auto;
+width: 100%;
   background:  var(--grid);
   border: 0px;
 font-size: .75em;
