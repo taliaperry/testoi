@@ -34,7 +34,7 @@ main {min-height: 100vh;}
 header {padding:1em; padding-bottom: 2em;
    font-family: 'Krona One', sans-serif;
 font-weight:700;}
-footer {padding:1em; font-size:0.75em; position: absolute; botom: 0; width: 100%;}
+footer {padding:1em; font-size:0.75em; position: absolute; bottom: 0; width: 100%;}
 
 p {margin-bottom:.5em;}
 
@@ -268,7 +268,7 @@ tr:hover {background-color: var(--background);}
 .panel {
   display: none;
   position:absolute; 
-  top: 29.5em;
+  top: 32em; /* unfortunately have to hardcode this atm */
   padding: 1em;
   background: var(--textbright);
   width:90%;
@@ -305,10 +305,7 @@ tr:hover {background-color: var(--background);}
 		width: 100%;
 		background: var(--textfade); }
 	nav label{display: block;} 
-}
-
-
-@media (max-width: 799px) {
+		
 .label {
   position: relative;
   display: block;
