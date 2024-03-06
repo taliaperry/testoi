@@ -234,7 +234,7 @@ tr:hover {background-color: var(--background);}
   border-bottom: 3em solid transparent;
   border-left: 2em solid var(--text);
   position: absolute;
-  top: 15em;
+  top: 0;
   margin-top: 0;
   left: 100%;
   z-index: 2;
@@ -264,7 +264,7 @@ tr:hover {background-color: var(--background);}
 .panel {
   display: none;
   position:absolute; 
-  top: 9.5em;
+  top: 29.5em;
   padding: 1em;
   background: var(--textbright);
   width:90%;
