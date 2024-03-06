@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+*:focus, input:focus + label {
+  outline: none;
+  box-shadow: inset 0 2px var(--background);
+}
+
 :root {
 --background: #8E98A6;
 --grid: #8CBEB2;
@@ -189,7 +194,82 @@ td {
   padding: .5em;
   border-bottom: 1px solid var(--text);}
 tr:hover {background-color: var(--background);}
-   
+
+
+.tabs {
+  display: block;
+  overflow: hidden;
+  float: left;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  padding-bottom: 2em;
+}
+
+.radiotab {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+  position: relative;
+  display: block;
+  float: left;
+  height: 6em;
+  padding: 1.5em 0 1em 3em;
+  background: var(--text);
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--textfade);
+  border: none;
+  border-radius: 0;
+  text-align: left;
+}
+.label:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 3em solid transparent;
+  border-bottom: 3em solid transparent;
+  border-left: 2em solid var(--text);
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+  left: 100%;
+  z-index: 2;
+}
+
+.label:last-of-type {
+  background: var(--grid);
+  padding-right: 2em;}
+.label:last-of-type:after {
+  content: "";
+  border: none;}
+
+.radiotab:hover + .label {
+  background: #F3D091;} 
+.radiotab:hover + .label:after {
+  border-left: 2em solid #F3D091;}
+
+.radiotab:checked + .label {
+  background: var(--textbright);
+  color: #333;
+  border: none;}
+.radiotab:checked + .label:after {
+  border-left: 2em solid var(--textbright);}
+.radiotab:checked + .label + .panel {
+  display: block;}
+
+.panel {
+  display: none;
+  position:absolute; 
+  top: 9.5em;
+  padding: 1em;
+  background: var(--textbright);
+  width:90%;
+  margin: auto;
+}
    
 @media only screen and (min-width: 651px) {
 
@@ -221,4 +301,52 @@ tr:hover {background-color: var(--background);}
 		width: 100%;
 		background: var(--textfade); }
 	nav label{display: block;} 
+}
+
+
+@media (max-width: 799px) {
+.label {
+  position: relative;
+  display: block;
+  float: left;
+  height: 6em;
+  width: 100%;
+  padding: 1em 2em;
+}
+.label:after {
+  content: "";
+  border: none;
+}
+
+.label:last-of-type {
+  background: var(--grid);
+  padding-right: 2em;}
+.label:last-of-type:after {
+  content: "";
+  border: none;}
+
+.radiotab:hover + .label {
+  background: #F3D091;} 
+.radiotab:hover + .label:after {
+  border: none;}
+
+.radiotab:checked + .label {
+  background: var(--textbright);
+  color: #333;
+  border: none;}
+.radiotab:checked + .label:after {
+  border: none;}
+.radiotab:checked + .label + .panel {
+  display: block;}
+
+.panel {
+  display: none;
+  position:relative; 
+  top: 0;
+  padding: 1em;
+  background: var(--textbright);
+  width:100%;
+  margin: auto;
+  z-index: -1;
+}
 }
