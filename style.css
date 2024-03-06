@@ -234,7 +234,7 @@ tr:hover {background-color: var(--background);}
   border-bottom: 3em solid transparent;
   border-left: 2em solid var(--text);
   position: absolute;
-  top: 0;
+  top: 15em;
   margin-top: 0;
   left: 100%;
   z-index: 2;
