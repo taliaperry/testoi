@@ -270,7 +270,7 @@ tr:hover {background-color: var(--background);}
 .panel {
   display: none;
   position:absolute; 
-  top: 20em; /* unfortunately have to hardcode this atm */
+  top: 21em; /* unfortunately have to hardcode this atm */
   padding: 1em;
   background: var(--textbright);
   width:90%;
