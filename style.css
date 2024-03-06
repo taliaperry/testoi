@@ -37,7 +37,8 @@ header {padding:1em; padding-bottom: 2em;
    font-family: 'Krona One', sans-serif;
 font-weight:700;}
 footer {padding:1em; font-size:0.75em; position: sticky;
-  top: 100vh; width: 100%;}
+  top: 100vh; width: 100%;
+       clear: both;}
 
 p {margin-bottom:.5em;}
 
@@ -207,9 +208,8 @@ tr:hover {background-color: var(--background);}
   overflow: hidden;
   float: left;
   padding: 0;
-  width:90%;
-  margin: 0 auto;
-  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto 0 auto;
   padding-bottom: 2em;
 }
 
