@@ -157,6 +157,13 @@ font-weight:500; font-size:1.25em}}
   margin: auto;
 }
 
+.fullcontent {
+  width:90%;
+  background: var(--grid);
+  padding: 1em;
+  margin: auto;
+}
+
 button,
 input,
 select,
